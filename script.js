@@ -70,6 +70,11 @@ const personalMovieDB = {
     },
 
     toggleVisibleMyDB: function(){
-        return !personalMovieDB.private;
+        //return !personalMovieDB.private;
+        if (personalMovieDB.private){
+            personalMovieDB.private = false;
+        } else {
+            personalMovieDB.private = true;
+        }
     }
 };
